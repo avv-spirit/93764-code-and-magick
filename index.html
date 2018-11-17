@@ -195,19 +195,18 @@
       return 2;
     }
   };
-
-  // Определить пропорцию мага
-  var getWizardHeight = function (wizardHeight) {
+  
+  var getWizardHeight = function () {
     var wizardHeight = 1.337 * wizardWidth;
+    return wizardHeight;
   };
-
-  // Определить getWizardX
+  
   var getWizardX = function (width) {
-    return
+    return width / 2 - wizardWidth;
   };
-  // Определить getWizardY
+  
   var getWizardY = function (height) {
-    return
+    return height * 2/3 - getWizardHeight();
   };
 </script>
 <script src="js/game.js"></script>
